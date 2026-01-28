@@ -1,0 +1,21 @@
+ INSERT INTO acquirente (nome, mail, residenza, metodo_pagamento) VALUES
+('Luca Rossi', 'luca.rossi@email.com', 'Milano', 'Carta di credito'),
+('Maria Bianchi', 'maria.bianchi@email.com', 'Roma', 'PayPal'),
+('Giovanni Verdi', 'giovanni.verdi@email.com', 'Napoli', 'Bonifico'),
+('Anna Neri', 'anna.neri@email.com', 'Torino', 'Carta di credito'),
+('Francesco Russo', 'francesco.russo@email.com', 'Firenze', 'PayPal');
+
+INSERT INTO prodotto (prodotto, destinazione, peso, prezzo) VALUES
+('Laptop', 'Italia', 2.50, 899.99),
+('Mouse Wireless', 'Europa', 0.20, 29.90),
+('Stampante', 'Italia', 6.80, 199.00),
+('Cuffie Bluetooth', 'Europa', 0.35, 79.90),
+('Monitor 24 pollici', 'Italia', 4.50, 189.99);
+
+
+INSERT INTO ordine (id_acquirente, id_prodotto, stato_ordine, quantita, data_ordine) VALUES
+(1, 1, 'Spedito', 1, '2024-05-10'),
+(2, 2, 'In elaborazione', 2, '2024-05-11'),
+(3, 3, 'Consegnato', 1, '2024-05-08'),
+(4, 5, 'Spedito', 1, '2024-05-12'),
+(5, 4, 'In elaborazione', 3, '2024-05-13');
